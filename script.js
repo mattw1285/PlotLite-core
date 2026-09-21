@@ -1,11 +1,11 @@
 const map = L.map('map').setView([54.5,-2.5],6);
 
 L.tileLayer(
-  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
-  {
-    maxZoom:19,
-    attribution:'Tiles &copy; Esri'
-  }
+    'https://tile.openstreetmap.org/{z}/{y}/{x}',
+    {
+        maxZoom:19,
+        attribution:'Tiles &copy; OpenStreetMap'
+    }
 ).addTo(map);
 
 map.pm.addControls({
