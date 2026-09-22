@@ -17,47 +17,19 @@
     />
 </head>
 <body>
+
 <div id="app">
-  <div id="top">
-    <div class="logo">PlotLite</div>
-    <button onclick="newProject()">New</button>
-    <button onclick="document.getElementById('file').click()">Import</button>
-    <button onclick="exportGeoJSON()">Export</button>
-    <button onclick="saveLocal()">Save</button>
-    <button onclick="loadLocal()">Load</button>
-    <span style="width:1px;height:25px;background:#ddd;margin:0 4px"></span>
-    <button onclick="undo()">Undo</button>
-    <button onclick="redo()">Redo</button>
-    <input id="file" type="file" accept=".geojson,.json">
-  </div>
-
-  <div id="main">
-    <aside id="left">
-      <div class="panel-title">Layers <span id="layer-count"></span></div>
-      <div id="layers"></div>
-      <button id="add-layer" onclick="addLayer()">+ Add layer</button>
-    </aside>
-
-    <div id="map"></div>
-
-    <aside id="right">
-      <div class="panel-title">Feature</div>
-      <div id="properties"><div class="muted">Click a feature to edit its properties.</div></div>
-    </aside>
-  </div>
-
-  <div id="status">
-    <span id="coords">—</span>
-    <span id="count">0 features</span>
-    <span id="active">Layer: —</span>
-  </div>
+     <aside id="header"></aside>
+     
+     <div id="main"></div>
 </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-         crossorigin="anonymous">
-    </script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="anonymous">
+</script>
 
-    <script src="./src/script.js"></script>
+<script src="./src/main.js"></script>
+
 </body>
 </html>
