@@ -8,21 +8,5 @@ L.tileLayer(
     }
 ).addTo(map);
 
-map.pm.addControls({
-  position:'topleft',
-  drawMarker:true,
-  drawPolyline:true,
-  drawPolygon:true,
-  drawRectangle:true,
-  drawCircle:false,
-  drawCircleMarker:false,
-  drawText:false,
-  editMode:true,
-  dragMode:true,
-  cutPolygon:false,
-  removalMode:true,
-  rotateMode:false
-});
-
 map.getContainer().style.height = "500px";
 map.getContainer().style.width = "500px";
