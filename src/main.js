@@ -1,10 +1,10 @@
-const map = L.map('main').setView([54.5,-2.5],6);
+const map = L.map('map').setView([54.5,-2.5],6);
 
 L.tileLayer(
-    'https://tile.openstreetmap.org/{z}/{y}/{x}',
+    'https://tile.openstreetmap.org/{z}/{y}/{x},png',
     {
         maxZoom:19,
-        attribution:'Tiles &copy; OpenStreetMap'
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'     
     }
 ).addTo(map);
 
@@ -23,3 +23,5 @@ map.pm.addControls({
   removalMode:true,
   rotateMode:false
 });
+
+map.getContainer().style.height = "500px";
