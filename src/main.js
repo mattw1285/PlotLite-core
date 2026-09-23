@@ -9,4 +9,3 @@ L.tileLayer(
 ).addTo(map);
 
 map.getContainer().style.height = "500px";
-map.getContainer().style.width = "500px";
