@@ -1,5 +1,6 @@
 :root {
     font-family: sans-serif;
+    --header-height: 75px;
 }
 
 html, body {
@@ -10,19 +11,12 @@ html, body {
 }
 
 header {
-    height: 50px;
-    flex-shrink: 0;
-
-    display: flex;
+    height: var(--header-height);
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 1rem;
-    box-sizing: border-box;
 }
 
 #map {
     width: 100%;
-    flex: 1;
-    min-height: 10px;
+    height: calc(100% - var(--header-height));
 }
