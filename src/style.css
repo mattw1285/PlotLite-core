@@ -2,6 +2,12 @@
     font-family: sans-serif;
 }
 
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
 #header {
     height: 50px;
 
@@ -13,18 +19,11 @@
     box-sizing: border-box;
 }
 
-#app {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
 main {
     width: 100%;
     height 100%;
 }
 
 #map {
-    width: 500px;
     height: 500px;
 }
