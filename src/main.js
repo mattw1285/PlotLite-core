@@ -7,5 +7,3 @@ L.tileLayer(
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'     
     }
 ).addTo(map);
-
-map.getContainer().style.height = "500px";
