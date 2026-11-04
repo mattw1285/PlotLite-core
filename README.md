@@ -3,38 +3,36 @@
 </div>
 
 <div align="center">
-  <img alt="PlotLite Logo" src="https://raw.githubusercontent.com/mattw1285/PlotLite/main/assets/lite-txt.svg" width="100%">
+  <img alt="PlotLite Logo" src="https://raw.githubusercontent.com/mattw1285/PlotLite/main/assets/core-txt.svg" width="100%">
 </div>
 
 <p align="center">
-The lightest of light GIS editors.
+A lightweight GIS editor, with slightly fewer reasons to be concerned.
 </p>
 
 ## Overview
 
-`PlotLite-lite` aims to pack a lightweight geospatial experience into a single `index.html` file.
-Striving to squeeze a GIS editor into the tightest package possible, without the installation, setup, or unnecessary baggage of genuine reliability.
-Please reference `PlotLite` for anything that even pretends to be full fledged works.
-Features here will remain minimal in both effort and complexity.
+`PlotLite-core` aims to package a lightweight frontend geospatial experience.
+I'm still striving to squeeze a GIS editor into a lightweight experience. 
+This time though, there is a molecule of reliability concern compared to `PlotLite-lite`. 
+Please still reference `PlotLite` for anything desribed as full fledged works.
+Features here will remain fairly minimal in both effort and complexity.
 
-> "PlotLite-lite: So lightweight, it almost floats off your screen." - OpenAI, 2026
+> "PlotLite-core: Less lightweight, almost concerned with reliability!" - OpenAI, 2026
 
 ## Features
 
-- **Single-File Simplicity**
 - **Leaflet Powered**
 - **OpenStreetMap Backgrounds**
-- **Zero-Install**
+- **Simple UI Functionality**
+- **GitHub Pages Availability**
 
-> "It’s not feature-starved; it’s just aggressively minimalist." - M.W, 2026
+> "It’s not badly designed; it’s just experimental." - M.W, 2026
 
 ## How To
 
-1. Download or clone `index.html`.
-1. Double-click the file to open it.
-1. Start mapping!
-
-*An internet connection is required for externally hosted libraries and map tiles.*
+1. Go to the GitHub Pages link.
+1. ...
 
 ## Acknowledgments
 
