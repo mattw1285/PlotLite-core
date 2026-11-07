@@ -1,3 +1,4 @@
+const home = [54.99768, -1.45737]
 const map = L.map(
     'map',
     {
@@ -8,7 +9,7 @@ const map = L.map(
         ],
         maxBoundsViscosity: 1.0
     }
-).setView([54.9974, -1.457], 19);
+).setView(home, 19);
 
 L.tileLayer(
     'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -22,3 +23,9 @@ L.tileLayer(
 L.control.zoom({
     position: 'bottomright'
 }).addTo(map);
+
+const marker = L.marker(home).addTo(map);
+
+marker.bindPopup(
+    "<p align='center'>Hello and welcome to the sunny sights. </br>My home is in North Shields.</p>"
+).openPopup();
