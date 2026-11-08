@@ -1,5 +1,8 @@
+import {LeafletMap, TileLayer} from 'leaflet'
+import 'leaflet/styles.css'
+
 const home = [54.99768, -1.45737]
-const map = L.map(
+const map = LeafletMap.map(
     'map',
     {
         zoomControl: false,
@@ -11,7 +14,7 @@ const map = L.map(
     }
 ).setView(home, 19);
 
-L.tileLayer(
+TileLayer(
     'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
     {
         maxZoom: 19,
@@ -20,12 +23,12 @@ L.tileLayer(
     }
 ).addTo(map);
 
-L.control.zoom({
-    position: 'bottomright'
-}).addTo(map);
+// L.control.zoom({
+    // position: 'bottomright'
+// }).addTo(map);
 
-const marker = L.marker(home).addTo(map);
+// const marker = L.marker(home).addTo(map);
 
-marker.bindPopup(
-    "<p align='center'>Hello and welcome to the sunny sights. </br>My home is in North Shields.</p>"
-).openPopup();
+// marker.bindPopup(
+    // "<p align='center'>Hello and welcome to the sunny sights. </br>My home is in North Shields.</p>"
+// ).openPopup();
