@@ -1,0 +1,23 @@
+{
+  "name": "plotlite-core",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <img alt=\"PlotLite Logo\" src=\"https://raw.githubusercontent.com/mattw1285/PlotLite/main/assets/plotlite-logo.svg\" width=\"250px\" height=\"250px\"> </div>",
+  "homepage": "https://github.com/mattw1285/PlotLite-core#readme",
+  "bugs": {
+    "url": "https://github.com/mattw1285/PlotLite-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattw1285/PlotLite-core.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

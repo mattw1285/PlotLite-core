@@ -5,3 +5,9 @@
 .*.swp
 .*.swo
 *~
+
+# Env
+.env
+
+# NodeJs
+node_modules/
