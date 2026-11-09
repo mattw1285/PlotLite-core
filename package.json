@@ -1,8 +1,8 @@
 {
   "name": "plotlite-core",
   "version": "1.0.0",
-  "description": "<div align=\"center\">   <img alt=\"PlotLite Logo\" src=\"https://raw.githubusercontent.com/mattw1285/PlotLite/main/assets/plotlite-logo.svg\" width=\"250px\" height=\"250px\"> </div>",
-  "homepage": "https://github.com/mattw1285/PlotLite-core#readme",
+  "description": "tbd...",
+  "homepage": "tbd...",
   "bugs": {
     "url": "https://github.com/mattw1285/PlotLite-core/issues"
   },
@@ -10,12 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/mattw1285/PlotLite-core.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "",
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "leaflet": "^1.9.4"
