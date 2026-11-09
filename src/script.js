@@ -1,6 +1,16 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
+
+L.Icon.Default.mergeOptions({
+    iconUrl: markerIcon,
+    iconRetinaUrl: markerIcon2x,
+    shadowUrl: markerShadow
+})
+
 const home = [54.99768, -1.45737]
 const map = L.map(
     'map',
