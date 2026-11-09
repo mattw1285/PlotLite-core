@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { copyFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 export default defineConfig({
     base: '/PlotLite-core/',
@@ -18,7 +19,10 @@ export default defineConfig({
     plugins: [{
         name: 'copy-license',
         closeBundle() {
-            copyFileSync('LICENSE.md', 'dist/LICENSE.md')
+            copyFileSync(
+                resolve('LICENSE.md'), 
+                resolve('dist/LICENSE.md')
+            )
         }
     }]
 })
