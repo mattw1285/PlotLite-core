@@ -1,6 +1,7 @@
 {
   "name": "plotlite-core",
   "version": "1.0.0",
+  "type": "module",
   "description": "tbd...",
   "homepage": "tbd...",
   "bugs": {
