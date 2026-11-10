@@ -12,8 +12,7 @@
     "url": "git+https://github.com/mattw1285/PlotLite-core.git"
   },
   "license": "MIT",
-  "author": "",
-  "type": "commonjs",
+  "author": "mattw1285",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
