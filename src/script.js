@@ -42,3 +42,9 @@ const marker = L.marker(home).addTo(map);
 marker.bindPopup(
     "<p align='center'>Hello and welcome to the sunny sights. </br>My home is in North Shields.</p>"
 ).openPopup();
+
+const url = 'https://raw.githubusercontent.com/mattw1285/PlotLite/main/assets/output.geojson';
+const response = await fetch(url);
+const dno = await response.json();
+
+var myLayer = L.geoJSON(dno).addTo(map);
