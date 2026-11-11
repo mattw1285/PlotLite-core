@@ -85,11 +85,12 @@ const provider = new OpenStreetMapProvider();
 
 const searchControl = new GeoSearchControl({
     provider: provider,
-    style: 'bar',
+    style: 'button',
     position: 'bottomleft',
-    autoClose: true,
+    autoClose: false,
     keepResult: true,
-    searchLabel: 'Search locations...'
+    searchLabel: 'Search locations...',
+    showMarker: true
 });
 
 map.addControl(searchControl);
