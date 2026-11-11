@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "leaflet": "^1.9.4",
-    "leaflet-draw": "^1.0.4",
+    "leaflet-draw": "^1.0.2",
     "leaflet-geosearch": "^5.2.0"
   },
   "devDependencies": {

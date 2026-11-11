@@ -56,7 +56,12 @@ const dno = await response.json();
 var myLayer = L.geoJSON(dno).addTo(map);
 
 const drawnItems = new L.FeatureGroup();
+
 map.addLayer(drawnItems);
+
+map.on('draw:drawstart', () => {
+    console.log('Drawing started');
+});
 
 const drawControl = new L.Control.Draw({
     position: 'topleft',
@@ -75,6 +80,10 @@ const drawControl = new L.Control.Draw({
 
 map.addControl(drawControl);
 
+map.on(L.Draw.Event.CREATED, function (event) {
+    const layer = event.layer;
+    drawnItems.addLayer(layer);
+});
 
 const provider = new OpenStreetMapProvider();
 
