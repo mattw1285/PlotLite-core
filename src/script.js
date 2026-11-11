@@ -56,12 +56,8 @@ const dno = await response.json();
 var myLayer = L.geoJSON(dno).addTo(map);
 
 const drawnItems = new L.FeatureGroup();
-
 map.addLayer(drawnItems);
 
-map.on('draw:drawstart', () => {
-    console.log('Drawing started');
-});
 
 const drawControl = new L.Control.Draw({
     position: 'topleft',
