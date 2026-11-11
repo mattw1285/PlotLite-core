@@ -9,7 +9,7 @@ import 'leaflet-draw';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
 import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
-
+import 'leaflet-geosearch/dist/geosearch.css';
 
 L.Icon.Default.mergeOptions({
     iconUrl: markerIcon,
