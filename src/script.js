@@ -8,6 +8,9 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import 'leaflet-draw';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
+import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+
+
 L.Icon.Default.mergeOptions({
     iconUrl: markerIcon,
     iconRetinaUrl: markerIcon2x,
@@ -56,7 +59,7 @@ const drawnItems = new L.FeatureGroup();
 map.addLayer(drawnItems);
 
 const drawControl = new L.Control.Draw({
-    position: 'bottomleft',
+    position: 'topleft',
     edit: {
         featureGroup: drawnItems
     },
@@ -71,3 +74,17 @@ const drawControl = new L.Control.Draw({
 });
 
 map.addControl(drawControl);
+
+
+const provider = new OpenStreetMapProvider();
+
+const searchControl = new GeoSearchControl({
+    provider: provider,
+    style: 'bar',
+    position: 'bottomleft',
+    autoClose: true,
+    keepResult: true,
+    searchLabel: 'Search locations...'
+});
+
+map.addControl(searchControl);
