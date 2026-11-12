@@ -83,8 +83,6 @@ map.on(L.Draw.Event.CREATED, function (event) {
     drawnItems.addLayer(layer);
 });
 
-
-
 const biasLat = home[0];
 const biasLon = home[1];
 const provider = new PhotonProvider({
@@ -96,8 +94,8 @@ const provider = new PhotonProvider({
 });
 map.on('moveend', () => {
   const center = map.getCenter();
-  provider.params.lat = center.lat;
-  provider.params.lon = center.lng;
+  provider.options.params.lat = center.lat;
+  provider.options.params.lon = center.lng;
 });
 const searchControl = new GeoSearchControl({
     provider: provider,
