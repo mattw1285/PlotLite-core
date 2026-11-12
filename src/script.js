@@ -84,7 +84,21 @@ map.on(L.Draw.Event.CREATED, function (event) {
 });
 
 
-const provider = new PhotonProvider();
+
+const biasLat = home[0];
+const biasLon = home[1];
+const provider = new PhotonProvider({
+    params: {
+        lat: biasLat,
+        lon: biasLon,
+        limit: 5
+    }
+});
+map.on('moveend', () => {
+  const center = map.getCenter();
+  provider.params.lat = center.lat;
+  provider.params.lon = center.lng;
+});
 const searchControl = new GeoSearchControl({
     provider: provider,
     style: 'button',
