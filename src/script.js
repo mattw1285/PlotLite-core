@@ -8,8 +8,10 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import 'leaflet-draw';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
-import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+import { GeoSearchControl, PhotonProvider } from 'leaflet-geosearch';
 import 'leaflet-geosearch/dist/geosearch.css';
+
+delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
     iconUrl: markerIcon,
@@ -81,16 +83,13 @@ map.on(L.Draw.Event.CREATED, function (event) {
     drawnItems.addLayer(layer);
 });
 
-const provider = new OpenStreetMapProvider();
 
+const provider = new PhotonProvider();
 const searchControl = new GeoSearchControl({
     provider: provider,
     style: 'button',
-    position: 'bottomleft',
-    autoClose: false,
     keepResult: true,
-    searchLabel: 'Search locations...',
+    searchLabel: 'Search Address...',
     showMarker: true
 });
-
 map.addControl(searchControl);
